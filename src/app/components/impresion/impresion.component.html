@@ -1,0 +1,23 @@
+<h1>Modelo en Impresión 3D</h1>
+
+<div class="row">
+
+  <div class="col-md-4">
+    <img [src]="impresion.img" class="img-fluid">
+    <br>
+    <br>
+    <a [routerLink]="['/impresiones']" class="btn btn-outline-danger">Regresar</a>
+
+  </div>
+
+  <div class="col-md-8">
+
+    <h3>Nombre: {{impresion.nombre | uppercase}} </h3>
+    <hr>
+    <p>{{impresion.descripcion |uppercase}}</p>
+
+    <div class="alert alert-success" role="alert"><b>Precio: $ {{impresion.precio}}</b></div>
+
+  </div>
+
+</div>
